@@ -37,6 +37,13 @@ def sum_digits(y):
     6
     """
     "*** YOUR CODE HERE ***"
+    result = 0
+
+    while y:
+        result += y % 10
+        y //= 10
+
+    return result
 
 
 def double_eights(n):
