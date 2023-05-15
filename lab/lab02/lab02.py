@@ -46,6 +46,16 @@ def count_cond(condition):
     """
     "*** YOUR CODE HERE ***"
 
+    def f(n):
+        i, count = 1, 0
+        while i <= n:
+            if condition(n, i):
+                count += 1
+            i += 1
+        return count
+
+    return f
+
 
 def compose1(f, g):
     """Return the composition function which given x, computes f(g(x)).
