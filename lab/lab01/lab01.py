@@ -10,7 +10,6 @@ def falling(n, k):
     >>> falling(4, 0)
     1
     """
-    "*** YOUR CODE HERE ***"
 
     result = 1
     count = 0
@@ -36,7 +35,6 @@ def sum_digits(y):
     >>> a
     6
     """
-    "*** YOUR CODE HERE ***"
     result = 0
 
     while y:
@@ -61,7 +59,6 @@ def double_eights(n):
     >>> double_eights(80808080)
     False
     """
-    "*** YOUR CODE HERE ***"
 
     while n:
         if n % 100 == 88:
