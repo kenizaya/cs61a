@@ -13,7 +13,6 @@ def lambda_curry2(func):
     >>> lambda_curry2(mod)(123)(10)
     3
     """
-    "*** YOUR CODE HERE ***"
     return lambda x: lambda y: func(x, y)
 
 
@@ -44,7 +43,6 @@ def count_cond(condition):
     >>> count_primes(20)   # 2, 3, 5, 7, 11, 13, 17, 19
     8
     """
-    "*** YOUR CODE HERE ***"
 
     def f(n):
         i, count = 1, 0
