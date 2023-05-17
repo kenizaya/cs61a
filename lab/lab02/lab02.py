@@ -87,7 +87,6 @@ def composite_identity(f, g):
     >>> b1(4)                            # (4 + 1)^2 != 4^2 + 1
     False
     """
-    "*** YOUR CODE HERE ***"
 
 
 def cycle(f1, f2, f3):
