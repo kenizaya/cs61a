@@ -116,3 +116,14 @@ def cycle(f1, f2, f3):
     >>> do_two_cycles(1)
     19
     """
+
+    def f(n):
+        def g(x):
+            if n == 0:
+                return x
+
+            return cycle(f2, f3, f1)(n - 1)(f1(x))
+
+        return g
+
+    return f
