@@ -51,9 +51,13 @@ def free_bacon(score):
     # Trim pi to only (score + 1) digit(s)
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
-    # END PROBLEM 2
+    nth_pi_digit = (pi % pow(10, len(str(pi)) - score)) // pow(
+        10, len(str(pi)) - score - 1
+    )
 
-    return pi % 10 + 3
+    return nth_pi_digit + 3
+
+    # END PROBLEM 2
 
 
 def take_turn(num_rolls, opponent_score, dice=six_sided):
