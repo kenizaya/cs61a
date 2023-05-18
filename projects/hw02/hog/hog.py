@@ -51,11 +51,9 @@ def free_bacon(score):
     # Trim pi to only (score + 1) digit(s)
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
-    nth_pi_digit = (pi % pow(10, len(str(pi)) - score)) // pow(
-        10, len(str(pi)) - score - 1
-    )
+    nth_pi_digit = pi // pow(10, len(str(pi)) - score - 1)
 
-    return nth_pi_digit + 3
+    return nth_pi_digit % 10 + 3
 
     # END PROBLEM 2
 
