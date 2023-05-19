@@ -177,6 +177,18 @@ def play(
     who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     # BEGIN PROBLEM 5
     "*** YOUR CODE HERE ***"
+    # player0_dice_rolls =
+    # player1_dice_rolls =
+
+    while score0 < goal and score1 < goal:
+        if who == 0:
+            score0 += take_turn(strategy0(score0, score1), score1, dice)
+            if not extra_turn(score0, score1):
+                who = other(who)
+        elif who == 1:
+            score1 += take_turn(strategy1(score1, score0), score0, dice)
+            if not extra_turn(score1, score0):
+                who = other(who)
     # END PROBLEM 5
     # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
     # BEGIN PROBLEM 6
