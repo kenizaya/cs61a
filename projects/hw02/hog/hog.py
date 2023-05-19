@@ -189,6 +189,7 @@ def play(
             score1 += take_turn(strategy1(score1, score0), score0, dice)
             if not extra_turn(score1, score0):
                 who = other(who)
+        say = say(score0, score1)
     # END PROBLEM 5
     # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
     # BEGIN PROBLEM 6
