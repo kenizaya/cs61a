@@ -22,7 +22,6 @@ def roll_dice(num_rolls, dice=six_sided):
     assert type(num_rolls) == int, "num_rolls must be an integer."
     assert num_rolls > 0, "Must roll at least once."
     # BEGIN PROBLEM 1
-    "*** YOUR CODE HERE ***"
     total = 0
     pig_out = False
 
@@ -50,7 +49,6 @@ def free_bacon(score):
 
     # Trim pi to only (score + 1) digit(s)
     # BEGIN PROBLEM 2
-    "*** YOUR CODE HERE ***"
     nth_pi_digit = pi // pow(10, len(str(pi)) - score - 1)
 
     return nth_pi_digit % 10 + 3
@@ -72,7 +70,6 @@ def take_turn(num_rolls, opponent_score, dice=six_sided):
     assert num_rolls <= 10, "Cannot roll more than 10 dice."
     assert opponent_score < 100, "The game should be over."
     # BEGIN PROBLEM 3
-    "*** YOUR CODE HERE ***"
     if num_rolls:
         return roll_dice(num_rolls, dice)
 
@@ -99,7 +96,6 @@ def swine_align(player_score, opponent_score):
     False
     """
     # BEGIN PROBLEM 4a
-    "*** YOUR CODE HERE ***"
     if player_score < 10 or opponent_score < 10:
         return False
 
@@ -132,7 +128,6 @@ def pig_pass(player_score, opponent_score):
     False
     """
     # BEGIN PROBLEM 4b
-    "*** YOUR CODE HERE ***"
     score_difference = opponent_score - player_score
 
     return 0 < score_difference < 3
