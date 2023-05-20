@@ -176,9 +176,6 @@ def play(
     """
     who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     # BEGIN PROBLEM 5
-    "*** YOUR CODE HERE ***"
-    # player0_dice_rolls =
-    # player1_dice_rolls =
 
     while score0 < goal and score1 < goal:
         if who == 0:
