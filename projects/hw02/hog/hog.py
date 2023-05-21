@@ -174,8 +174,7 @@ def play(
     goal:       The game ends and someone wins when this score is reached.
     say:        The commentary function to call at the end of the first turn.
     """
-    who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
-    # BEGIN PROBLEM 5
+    who = 0
 
     while score0 < goal and score1 < goal:
         if who == 0:
@@ -187,11 +186,6 @@ def play(
             if not extra_turn(score1, score0):
                 who = other(who)
         say = say(score0, score1)
-    # END PROBLEM 5
-    # (note that the indentation for the problem 6 prompt (***YOUR CODE HERE***) might be misleading)
-    # BEGIN PROBLEM 6
-    "*** YOUR CODE HERE ***"
-    # END PROBLEM 6
     return score0, score1
 
 
