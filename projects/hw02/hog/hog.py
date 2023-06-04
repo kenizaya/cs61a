@@ -271,8 +271,34 @@ def announce_highest(who, last_score=0, running_high=0):
     30 point(s)! The most yet for Player 1
     """
     assert who == 0 or who == 1, "The who argument should indicate a player."
+
     # BEGIN PROBLEM 7
-    "*** HERE ***"
+    def say(current_score0, current_score1):
+        if who == 0:
+            if current_score0 - last_score > running_high:
+                print(
+                    current_score0 - last_score,
+                    "point(s)! The most yet for Player",
+                    who,
+                )
+                return announce_highest(
+                    who, current_score0, current_score0 - last_score
+                )
+            return announce_highest(who, current_score0, running_high)
+
+        else:
+            if (current_score1 - last_score) > running_high:
+                print(
+                    current_score1 - last_score,
+                    "point(s)! The most yet for Player",
+                    who,
+                )
+                return announce_highest(
+                    who, current_score1, current_score1 - last_score
+                )
+            return announce_highest(who, current_score1, running_high)
+
+    return say
     # END PROBLEM 7
 
 
