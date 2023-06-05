@@ -340,7 +340,7 @@ def make_averaged(original_function, trials_count=1000):
     3.0
     """
     # BEGIN PROBLEM 8
-    "*** YOUR CODE HERE ***"
+    "*** CODE HERE ***"
     # END PROBLEM 8
 
 
