@@ -339,8 +339,15 @@ def make_averaged(original_function, trials_count=1000):
     >>> averaged_dice()
     3.0
     """
+
     # BEGIN PROBLEM 8
-    "*** CODE HERE ***"
+    def f(*args):
+        total = 0
+        for i in range(trials_count):
+            total += original_function(*args)
+        return total / trials_count
+
+    return f
     # END PROBLEM 8
 
 
